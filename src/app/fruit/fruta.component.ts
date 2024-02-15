@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-home',
+  selector: 'fruta',
   standalone: true,
   imports: [],
   template: `
@@ -9,8 +9,8 @@ import { Component } from '@angular/core';
       home works!
     </p>
   `,
-  styleUrl: './home.component.css'
+  styleUrl: './fruta.component.css'
 })
-export class HomeComponent {
+export class FrutaComponent {
 
 }
