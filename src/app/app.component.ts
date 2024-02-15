@@ -7,14 +7,7 @@ import { FrutaComponent } from './fruit/fruta.component';
   standalone: true,
   imports: [RouterOutlet, FrutaComponent],
   template:`
-  <main>
-    <header class="brand-name">
-      <img class="brand-logo" src="/assets/logo.svg" alt="logo">
-    </header>
-    <section class="content">
       <fruta></fruta>
-  </section>
-  </main>
   `,
   styleUrl: './app.component.css'
 })

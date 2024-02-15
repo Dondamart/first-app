@@ -4,13 +4,10 @@ import { Component } from '@angular/core';
   selector: 'fruta',
   standalone: true,
   imports: [],
-  template: `
-    <p>
-      home works!
-    </p>
-  `,
+  templateUrl:`./fruta.component.html`,
+
   styleUrl: './fruta.component.css'
 })
 export class FrutaComponent {
-
+  public nombre_componente= 'A la rica fruta';
 }
