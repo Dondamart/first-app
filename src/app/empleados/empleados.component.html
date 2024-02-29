@@ -1,5 +1,6 @@
 <h1>{{titulo}}</h1>
 <ul>
+    <button (click)="cambiarExterno()">Cambiar</button>
     <li>{{trabajadores[0].nombre}}</li>
         <ul>
             <li>{{trabajadores[0].edad}}</li>
@@ -14,9 +15,14 @@
         </ul>
     </li>
     <li>{{trabajadores[2].nombre}}</li>
-        <ul>
+        <ul *ngIf="trabajadorExterno==true">
             <li>{{trabajadores[2].edad}}</li>
             <li>{{trabajadores[2].puesto}}</li>
             <li>{{trabajadores[2].contratado}}</li>
         </ul>
+        <ul *ngIf="trabajadorExterno==false">
+            <li>{{trabajadores[2].edad}}</li>
+            <li>{{trabajadores[2].puesto}}</li>
+        </ul>
+
 </ul>
